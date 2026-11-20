@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="dense.hpp" path="/home/nandanbali/programming/deep-svdd/inference-hls/dense.hpp"/>
+    <originFiles name="inference.hpp" path="/home/nandanbali/programming/deep-svdd/inference-hls/inference.hpp"/>
+    <originFiles name="model_params.hpp" path="/home/nandanbali/programming/deep-svdd/inference-hls/model_params.hpp"/>
+    <originFiles name="relu.hpp" path="/home/nandanbali/programming/deep-svdd/inference-hls/relu.hpp"/>
+    <originFiles name="score.hpp" path="/home/nandanbali/programming/deep-svdd/inference-hls/score.hpp"/>
+    <originFiles name="inference_axis.hpp" path="/home/nandanbali/programming/deep-svdd/inference-hls/inference_axis.hpp"/>
+    <originFiles name="inference_axis.cpp" path="/home/nandanbali/programming/deep-svdd/inference-hls/inference_axis.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="test_dense_relu.cpp" path="/home/nandanbali/programming/deep-svdd/inference-hls/test_dense_relu.cpp"/>
+    <originFiles name="test_score.cpp" path="/home/nandanbali/programming/deep-svdd/inference-hls/test_score.cpp"/>
+    <originFiles name="testbench.cpp" path="/home/nandanbali/programming/deep-svdd/inference-hls/testbench.cpp"/>
+    <originFiles name="test_inference_axis.cpp" path="/home/nandanbali/programming/deep-svdd/inference-hls/test_inference_axis.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

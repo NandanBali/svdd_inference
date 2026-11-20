@@ -1,0 +1,156 @@
+{
+    "1": {
+        "name": "deep_svdd_inference_Pipeline_VITIS_LOOP_11_1",
+        "file": "\/home\/nandanbali\/programming\/deep-svdd\/inference-hls\/inference.hpp",
+        "fileloc": "7",
+        "instructions": "177",
+        "total_instructions": "177",
+        "calls": "",
+        "basicblocks": "36",
+        "loads": {
+            "L": "33"
+        },
+        "stores": {
+            "L": "33"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "deep_svdd_axis_Pipeline_VITIS_LOOP_34_2",
+        "file": "\/home\/nandanbali\/programming\/deep-svdd\/inference-hls\/inference_axis.cpp",
+        "fileloc": "19",
+        "instructions": "9",
+        "total_instructions": "9",
+        "calls": "",
+        "basicblocks": "3",
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "deep_svdd_axis",
+        "file": "inference_axis.cpp",
+        "fileloc": "5",
+        "instructions": "108",
+        "total_instructions": "1122",
+        "calls": "2 4",
+        "basicblocks": "10",
+        "loads": {
+            "L": "19"
+        },
+        "stores": {
+            "L": "12"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "3": {
+        "name": "deep_svdd_inference_Pipeline_VITIS_LOOP_13_13",
+        "file": "\/home\/nandanbali\/programming\/deep-svdd\/inference-hls\/inference.hpp",
+        "fileloc": "18",
+        "instructions": "170",
+        "total_instructions": "170",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "15",
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "4": {
+        "name": "deep_svdd_inference",
+        "file": "\/home\/nandanbali\/programming\/deep-svdd\/inference-hls\/inference.hpp",
+        "fileloc": "6",
+        "instructions": "112",
+        "total_instructions": "1005",
+        "calls": "8 1 5 6 3 7",
+        "basicblocks": "1",
+        "loads": {
+            "L": "47"
+        }
+    },
+    "5": {
+        "name": "deep_svdd_inference_Pipeline_VITIS_LOOP_13_11",
+        "file": "\/home\/nandanbali\/programming\/deep-svdd\/inference-hls\/inference.hpp",
+        "fileloc": "15",
+        "instructions": "301",
+        "total_instructions": "301",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "31",
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "6": {
+        "name": "deep_svdd_inference_Pipeline_VITIS_LOOP_11_12",
+        "file": "\/home\/nandanbali\/programming\/deep-svdd\/inference-hls\/inference.hpp",
+        "fileloc": "8",
+        "instructions": "97",
+        "total_instructions": "97",
+        "calls": "",
+        "basicblocks": "20",
+        "loads": {
+            "L": "17"
+        },
+        "stores": {
+            "L": "17"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "7": {
+        "name": "deep_svdd_inference_Pipeline_VITIS_LOOP_12_1",
+        "file": "\/home\/nandanbali\/programming\/deep-svdd\/inference-hls\/inference.hpp",
+        "fileloc": "19",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "1",
+            "L": "4"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "8": {
+        "name": "deep_svdd_inference_Pipeline_VITIS_LOOP_13_1",
+        "file": "\/home\/nandanbali\/programming\/deep-svdd\/inference-hls\/inference.hpp",
+        "fileloc": "12",
+        "instructions": "117",
+        "total_instructions": "117",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "8",
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

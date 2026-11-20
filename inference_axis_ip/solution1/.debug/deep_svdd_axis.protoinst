@@ -1,0 +1,89 @@
+{
+	"version": "1.0",
+	"modules": {
+		"deep_svdd_axis": {
+			"proto_instances": {
+				"grp_deep_svdd_axis_Pipeline_VITIS_LOOP_34_2_fu_291/grp_deep_svdd_axis_Pipeline_VITIS_LOOP_34_2_fu_291_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_deep_svdd_inference_fu_303/grp_deep_svdd_inference_Pipeline_VITIS_LOOP_11_12_fu_562/grp_deep_svdd_inference_Pipeline_VITIS_LOOP_11_12_fu_562_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_deep_svdd_inference_fu_303/grp_deep_svdd_inference_Pipeline_VITIS_LOOP_11_1_fu_428/grp_deep_svdd_inference_Pipeline_VITIS_LOOP_11_1_fu_428_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_deep_svdd_inference_fu_303/grp_deep_svdd_inference_Pipeline_VITIS_LOOP_12_1_fu_632/grp_deep_svdd_inference_Pipeline_VITIS_LOOP_12_1_fu_632_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_deep_svdd_inference_fu_303/grp_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_fu_464/grp_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_fu_464_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_deep_svdd_inference_fu_303/grp_deep_svdd_inference_Pipeline_VITIS_LOOP_13_13_fu_582/grp_deep_svdd_inference_Pipeline_VITIS_LOOP_13_13_fu_582_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_deep_svdd_inference_fu_303/grp_deep_svdd_inference_Pipeline_VITIS_LOOP_13_1_fu_390/grp_deep_svdd_inference_Pipeline_VITIS_LOOP_13_1_fu_390_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_deep_svdd_inference_fu_303/grp_deep_svdd_inference_fu_303_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				}
+			}
+		}
+	}
+}

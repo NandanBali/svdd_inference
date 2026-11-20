@@ -1,0 +1,33 @@
+{
+  "0": {
+    "basicblocks": 10,
+    "calls": "1",
+    "file": "inference_axis.cpp",
+    "fileloc": 5,
+    "instructions": 103,
+    "loads": {
+      "L": 6
+    },
+    "name": "deep_svdd_axis",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 392
+  },
+  "1": {
+    "basicblocks": 25,
+    "calls": "",
+    "file": "inference.hpp",
+    "fileloc": 6,
+    "instructions": 289,
+    "loads": {
+      "G": 4,
+      "L": 8
+    },
+    "name": "deep_svdd_inference",
+    "stores": {
+      "L": 9
+    },
+    "total_instructions": 289
+  }
+}

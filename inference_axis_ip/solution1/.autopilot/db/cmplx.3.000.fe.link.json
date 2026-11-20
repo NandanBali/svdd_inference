@@ -1,0 +1,155 @@
+{
+  "0": {
+    "basicblocks": 24,
+    "calls": "11",
+    "file": "inference_axis.cpp",
+    "fileloc": 5,
+    "instructions": 155,
+    "loads": {
+      "L": 4
+    },
+    "name": "deep_svdd_axis",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 4179
+  },
+  "1": {
+    "basicblocks": 10,
+    "calls": "",
+    "file": "relu.hpp",
+    "fileloc": 8,
+    "instructions": 36,
+    "loads": {
+      "L": 2
+    },
+    "name": "relu_layer<16>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 96
+  },
+  "10": {
+    "basicblocks": 10,
+    "calls": "",
+    "file": "relu.hpp",
+    "fileloc": 8,
+    "instructions": 36,
+    "loads": {
+      "L": 2
+    },
+    "name": "relu_layer<32>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 96
+  },
+  "11": {
+    "basicblocks": 1,
+    "calls": "7 10 3 1 4 5",
+    "file": "inference.hpp",
+    "fileloc": 6,
+    "instructions": 42,
+    "name": "deep_svdd_inference",
+    "total_instructions": 3602
+  },
+  "12": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "model_params.hpp",
+    "fileloc": 72,
+    "instructions": 9,
+    "name": "__cxx_global_var_init.3",
+    "total_instructions": 3089
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "model_params.hpp",
+    "fileloc": 7,
+    "instructions": 257,
+    "name": "__cxx_global_var_init",
+    "total_instructions": 98817
+  },
+  "3": {
+    "basicblocks": 13,
+    "calls": "",
+    "file": "dense.hpp",
+    "fileloc": 6,
+    "instructions": 60,
+    "loads": {
+      "L": 1
+    },
+    "name": "dense_layer<32, 16>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 872
+  },
+  "4": {
+    "basicblocks": 13,
+    "calls": "",
+    "file": "dense.hpp",
+    "fileloc": 6,
+    "instructions": 60,
+    "loads": {
+      "L": 1
+    },
+    "name": "dense_layer<16, 8>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 872
+  },
+  "5": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "score.hpp",
+    "fileloc": 9,
+    "instructions": 51,
+    "name": "svdd_score<8>",
+    "total_instructions": 752
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "model_params.hpp",
+    "fileloc": 42,
+    "instructions": 513,
+    "name": "__cxx_global_var_init.1",
+    "total_instructions": 197633
+  },
+  "7": {
+    "basicblocks": 13,
+    "calls": "",
+    "file": "dense.hpp",
+    "fileloc": 6,
+    "instructions": 60,
+    "loads": {
+      "L": 1
+    },
+    "name": "dense_layer<8, 32>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 872
+  },
+  "8": {
+    "basicblocks": 1,
+    "calls": "2 6 9 12",
+    "file": "inference_axis.pp.0.cpp",
+    "fileloc": 0,
+    "instructions": 5,
+    "name": "",
+    "total_instructions": 348953
+  },
+  "9": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "model_params.hpp",
+    "fileloc": 61,
+    "instructions": 129,
+    "name": "__cxx_global_var_init.2",
+    "total_instructions": 49409
+  }
+}

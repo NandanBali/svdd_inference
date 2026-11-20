@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "deep_svdd_axis",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "deep_svdd_axis"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/nandanbali/programming/deep-svdd/inference-hls/build_axis.tcl",
+    "sourceLine": 14,
+    "success": true
+  }
+]

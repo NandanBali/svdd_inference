@@ -1,0 +1,185 @@
+
+
+================================================================
+== Vitis HLS Report for 'deep_svdd_inference_Pipeline_VITIS_LOOP_11_12'
+================================================================
+* Date:           Fri Nov 20 21:26:52 2026
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        inference_axis_ip
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  4.956 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       18|       18|  0.180 us|  0.180 us|   18|   18|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_11_1  |       16|       16|         2|          1|          1|    16|       yes|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     53|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|     36|    -|
+|Register         |        -|    -|     372|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|     372|     89|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------+----------+----+---+----+------------+------------+
+    |add_ln11_fu_292_p2    |         +|   0|  0|  13|           5|           1|
+    |icmp_ln11_fu_286_p2   |      icmp|   0|  0|  14|           5|           6|
+    |hidden2_15_fu_324_p3  |    select|   0|  0|  24|           1|           1|
+    |ap_enable_pp0         |       xor|   0|  0|   2|           1|           2|
+    +----------------------+----------+----+---+----+------------+------------+
+    |Total                 |          |   0|  0|  53|          12|          10|
+    +----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_sig_allocacmp_i       |   9|          2|    5|         10|
+    |i_1_fu_96                |   9|          2|    5|         10|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  36|          8|   12|         24|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------+----+----+-----+-----------+
+    |           Name          | FF | LUT| Bits| Const Bits|
+    +-------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                |   1|   0|    1|          0|
+    |ap_done_reg              |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1  |   1|   0|    1|          0|
+    |hidden2_10_fu_140        |  24|   0|   25|          1|
+    |hidden2_11_fu_144        |  24|   0|   25|          1|
+    |hidden2_12_fu_148        |  24|   0|   25|          1|
+    |hidden2_13_fu_152        |  24|   0|   25|          1|
+    |hidden2_14_fu_156        |  24|   0|   25|          1|
+    |hidden2_1_fu_104         |  24|   0|   25|          1|
+    |hidden2_2_fu_108         |  24|   0|   25|          1|
+    |hidden2_3_fu_112         |  24|   0|   25|          1|
+    |hidden2_4_fu_116         |  24|   0|   25|          1|
+    |hidden2_5_fu_120         |  24|   0|   25|          1|
+    |hidden2_6_fu_124         |  24|   0|   25|          1|
+    |hidden2_7_fu_128         |  24|   0|   25|          1|
+    |hidden2_8_fu_132         |  24|   0|   25|          1|
+    |hidden2_9_fu_136         |  24|   0|   25|          1|
+    |hidden2_fu_100           |  24|   0|   25|          1|
+    |i_1_fu_96                |   5|   0|    5|          0|
+    |trunc_ln11_reg_571       |   4|   0|    4|          0|
+    +-------------------------+----+----+-----+-----------+
+    |Total                    | 372|   0|  387|         15|
+    +-------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------+-----+-----+------------+-----------------------------------------------+--------------+
+|       RTL Ports       | Dir | Bits|  Protocol  |                 Source Object                 |    C Type    |
++-----------------------+-----+-----+------------+-----------------------------------------------+--------------+
+|ap_clk                 |   in|    1|  ap_ctrl_hs|  deep_svdd_inference_Pipeline_VITIS_LOOP_11_12|  return value|
+|ap_rst                 |   in|    1|  ap_ctrl_hs|  deep_svdd_inference_Pipeline_VITIS_LOOP_11_12|  return value|
+|ap_start               |   in|    1|  ap_ctrl_hs|  deep_svdd_inference_Pipeline_VITIS_LOOP_11_12|  return value|
+|ap_done                |  out|    1|  ap_ctrl_hs|  deep_svdd_inference_Pipeline_VITIS_LOOP_11_12|  return value|
+|ap_idle                |  out|    1|  ap_ctrl_hs|  deep_svdd_inference_Pipeline_VITIS_LOOP_11_12|  return value|
+|ap_ready               |  out|    1|  ap_ctrl_hs|  deep_svdd_inference_Pipeline_VITIS_LOOP_11_12|  return value|
+|pre2_address0          |  out|    4|   ap_memory|                                           pre2|         array|
+|pre2_ce0               |  out|    1|   ap_memory|                                           pre2|         array|
+|pre2_q0                |   in|   25|   ap_memory|                                           pre2|         array|
+|hidden2_14_out         |  out|   25|      ap_vld|                                 hidden2_14_out|       pointer|
+|hidden2_14_out_ap_vld  |  out|    1|      ap_vld|                                 hidden2_14_out|       pointer|
+|hidden2_13_out         |  out|   25|      ap_vld|                                 hidden2_13_out|       pointer|
+|hidden2_13_out_ap_vld  |  out|    1|      ap_vld|                                 hidden2_13_out|       pointer|
+|hidden2_12_out         |  out|   25|      ap_vld|                                 hidden2_12_out|       pointer|
+|hidden2_12_out_ap_vld  |  out|    1|      ap_vld|                                 hidden2_12_out|       pointer|
+|hidden2_11_out         |  out|   25|      ap_vld|                                 hidden2_11_out|       pointer|
+|hidden2_11_out_ap_vld  |  out|    1|      ap_vld|                                 hidden2_11_out|       pointer|
+|hidden2_10_out         |  out|   25|      ap_vld|                                 hidden2_10_out|       pointer|
+|hidden2_10_out_ap_vld  |  out|    1|      ap_vld|                                 hidden2_10_out|       pointer|
+|hidden2_9_out          |  out|   25|      ap_vld|                                  hidden2_9_out|       pointer|
+|hidden2_9_out_ap_vld   |  out|    1|      ap_vld|                                  hidden2_9_out|       pointer|
+|hidden2_8_out          |  out|   25|      ap_vld|                                  hidden2_8_out|       pointer|
+|hidden2_8_out_ap_vld   |  out|    1|      ap_vld|                                  hidden2_8_out|       pointer|
+|hidden2_7_out          |  out|   25|      ap_vld|                                  hidden2_7_out|       pointer|
+|hidden2_7_out_ap_vld   |  out|    1|      ap_vld|                                  hidden2_7_out|       pointer|
+|hidden2_6_out          |  out|   25|      ap_vld|                                  hidden2_6_out|       pointer|
+|hidden2_6_out_ap_vld   |  out|    1|      ap_vld|                                  hidden2_6_out|       pointer|
+|hidden2_5_out          |  out|   25|      ap_vld|                                  hidden2_5_out|       pointer|
+|hidden2_5_out_ap_vld   |  out|    1|      ap_vld|                                  hidden2_5_out|       pointer|
+|hidden2_4_out          |  out|   25|      ap_vld|                                  hidden2_4_out|       pointer|
+|hidden2_4_out_ap_vld   |  out|    1|      ap_vld|                                  hidden2_4_out|       pointer|
+|hidden2_3_out          |  out|   25|      ap_vld|                                  hidden2_3_out|       pointer|
+|hidden2_3_out_ap_vld   |  out|    1|      ap_vld|                                  hidden2_3_out|       pointer|
+|hidden2_2_out          |  out|   25|      ap_vld|                                  hidden2_2_out|       pointer|
+|hidden2_2_out_ap_vld   |  out|    1|      ap_vld|                                  hidden2_2_out|       pointer|
+|hidden2_1_out          |  out|   25|      ap_vld|                                  hidden2_1_out|       pointer|
+|hidden2_1_out_ap_vld   |  out|    1|      ap_vld|                                  hidden2_1_out|       pointer|
+|hidden2_out            |  out|   25|      ap_vld|                                    hidden2_out|       pointer|
+|hidden2_out_ap_vld     |  out|    1|      ap_vld|                                    hidden2_out|       pointer|
++-----------------------+-----+-----+------------+-----------------------------------------------+--------------+
+

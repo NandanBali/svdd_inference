@@ -1,0 +1,104 @@
+set SynModuleInfo {
+  {SRCNAME deep_svdd_axis_Pipeline_VITIS_LOOP_34_2 MODELNAME deep_svdd_axis_Pipeline_VITIS_LOOP_34_2 RTLNAME deep_svdd_axis_deep_svdd_axis_Pipeline_VITIS_LOOP_34_2
+    SUBMODULES {
+      {MODELNAME deep_svdd_axis_flow_control_loop_pipe_sequential_init RTLNAME deep_svdd_axis_flow_control_loop_pipe_sequential_init BINDTYPE interface TYPE internal_upc_flow_control INSTNAME deep_svdd_axis_flow_control_loop_pipe_sequential_init_U}
+    }
+  }
+  {SRCNAME deep_svdd_inference_Pipeline_VITIS_LOOP_13_1 MODELNAME deep_svdd_inference_Pipeline_VITIS_LOOP_13_1 RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_1
+    SUBMODULES {
+      {MODELNAME deep_svdd_axis_mul_18s_25s_43_1_1 RTLNAME deep_svdd_axis_mul_18s_25s_43_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_mul_17s_25s_42_1_1 RTLNAME deep_svdd_axis_mul_17s_25s_42_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_mul_18s_25s_42_1_1 RTLNAME deep_svdd_axis_mul_18s_25s_42_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_mac_muladd_17s_25s_42s_42_4_1 RTLNAME deep_svdd_axis_mac_muladd_17s_25s_42s_42_4_1 BINDTYPE op TYPE all IMPL dsp_slice LATENCY 3 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_mac_muladd_17s_25s_43s_43_4_1 RTLNAME deep_svdd_axis_mac_muladd_17s_25s_43s_43_4_1 BINDTYPE op TYPE all IMPL dsp_slice LATENCY 3 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_1_p_ZL2W1_0_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_1_p_ZL2W1_0_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_1_p_ZL2W1_1_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_1_p_ZL2W1_1_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_1_p_ZL2W1_2_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_1_p_ZL2W1_2_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_1_p_ZL2W1_3_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_1_p_ZL2W1_3_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_1_p_ZL2W1_4_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_1_p_ZL2W1_4_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_1_p_ZL2W1_5_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_1_p_ZL2W1_5_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_1_p_ZL2W1_6_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_1_p_ZL2W1_6_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_1_p_ZL2W1_7_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_1_p_ZL2W1_7_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+    }
+  }
+  {SRCNAME deep_svdd_inference_Pipeline_VITIS_LOOP_11_1 MODELNAME deep_svdd_inference_Pipeline_VITIS_LOOP_11_1 RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_11_1}
+  {SRCNAME deep_svdd_inference_Pipeline_VITIS_LOOP_13_11 MODELNAME deep_svdd_inference_Pipeline_VITIS_LOOP_13_11 RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11
+    SUBMODULES {
+      {MODELNAME deep_svdd_axis_mul_16s_25s_41_1_1 RTLNAME deep_svdd_axis_mul_16s_25s_41_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_mul_17s_25s_41_1_1 RTLNAME deep_svdd_axis_mul_17s_25s_41_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_mac_muladd_17s_25s_41s_41_4_1 RTLNAME deep_svdd_axis_mac_muladd_17s_25s_41s_41_4_1 BINDTYPE op TYPE all IMPL dsp_slice LATENCY 3 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_mac_muladd_16s_25s_42s_42_4_1 RTLNAME deep_svdd_axis_mac_muladd_16s_25s_42s_42_4_1 BINDTYPE op TYPE all IMPL dsp_slice LATENCY 3 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_mac_muladd_16s_25s_41s_41_4_1 RTLNAME deep_svdd_axis_mac_muladd_16s_25s_41s_41_4_1 BINDTYPE op TYPE all IMPL dsp_slice LATENCY 3 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_0_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_0_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_1_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_1_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_2_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_2_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_3_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_3_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_4_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_4_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_5_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_5_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_6_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_6_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_7_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_7_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_8_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_8_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_9_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_9_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_10_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_10_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_11_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_11_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_12_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_12_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_13_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_13_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_15_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_15_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_16_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_16_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_17_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_17_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_18_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_18_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_19_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_19_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_20_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_20_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_21_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_21_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_22_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_22_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_23_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_23_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_24_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_24_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_25_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_25_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_26_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_26_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_27_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_27_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_28_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_28_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_29_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_29_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_30_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_30_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_31_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_11_p_ZL2W2_31_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+    }
+  }
+  {SRCNAME deep_svdd_inference_Pipeline_VITIS_LOOP_11_12 MODELNAME deep_svdd_inference_Pipeline_VITIS_LOOP_11_12 RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_11_12}
+  {SRCNAME deep_svdd_inference_Pipeline_VITIS_LOOP_13_13 MODELNAME deep_svdd_inference_Pipeline_VITIS_LOOP_13_13 RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_13
+    SUBMODULES {
+      {MODELNAME deep_svdd_axis_mac_muladd_17s_25s_41s_42_4_1 RTLNAME deep_svdd_axis_mac_muladd_17s_25s_41s_42_4_1 BINDTYPE op TYPE all IMPL dsp_slice LATENCY 3 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_13_p_ZL2W3_0_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_13_p_ZL2W3_0_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_13_p_ZL2W3_1_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_13_p_ZL2W3_1_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_13_p_ZL2W3_2_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_13_p_ZL2W3_2_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_13_p_ZL2W3_3_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_13_p_ZL2W3_3_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_13_p_ZL2W3_4_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_13_p_ZL2W3_4_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_13_p_ZL2W3_5_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_13_p_ZL2W3_5_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_13_p_ZL2W3_6_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_13_p_ZL2W3_6_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_13_p_ZL2W3_7_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_13_p_ZL2W3_7_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_13_p_ZL2W3_8_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_13_p_ZL2W3_8_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_13_p_ZL2W3_9_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_13_p_ZL2W3_9_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_13_p_ZL2W3_10_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_13_p_ZL2W3_10_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_13_p_ZL2W3_11_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_13_p_ZL2W3_11_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_13_p_ZL2W3_12_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_13_p_ZL2W3_12_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_13_p_ZL2W3_13_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_13_p_ZL2W3_13_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_13_p_ZL2W3_14_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_13_13_p_ZL2W3_14_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+    }
+  }
+  {SRCNAME deep_svdd_inference_Pipeline_VITIS_LOOP_12_1 MODELNAME deep_svdd_inference_Pipeline_VITIS_LOOP_12_1 RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_12_1
+    SUBMODULES {
+      {MODELNAME deep_svdd_axis_mul_26s_26s_50_1_1 RTLNAME deep_svdd_axis_mul_26s_26s_50_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_12_1_CENTER_ROM_AUTO_1R RTLNAME deep_svdd_axis_deep_svdd_inference_Pipeline_VITIS_LOOP_12_1_CENTER_ROM_AUTO_1R BINDTYPE storage TYPE rom IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+    }
+  }
+  {SRCNAME deep_svdd_inference MODELNAME deep_svdd_inference RTLNAME deep_svdd_axis_deep_svdd_inference
+    SUBMODULES {
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_pre1_RAM_AUTO_1R1W RTLNAME deep_svdd_axis_deep_svdd_inference_pre1_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_pre2_RAM_AUTO_1R1W RTLNAME deep_svdd_axis_deep_svdd_inference_pre2_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME deep_svdd_axis_deep_svdd_inference_embedding_RAM_AUTO_1R1W RTLNAME deep_svdd_axis_deep_svdd_inference_embedding_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+    }
+  }
+  {SRCNAME deep_svdd_axis MODELNAME deep_svdd_axis RTLNAME deep_svdd_axis IS_TOP 1
+    SUBMODULES {
+      {MODELNAME deep_svdd_axis_regslice_both RTLNAME deep_svdd_axis_regslice_both BINDTYPE interface TYPE interface_regslice INSTNAME deep_svdd_axis_regslice_both_U}
+    }
+  }
+}

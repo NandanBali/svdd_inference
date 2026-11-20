@@ -1,0 +1,103 @@
+---
+MainSourceFile:  /home/nandanbali/programming/deep-svdd/inference-hls/inference_axis_ip/solution1/.autopilot/db/inference_axis.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1207_1:  '
+    FileOffset:      1207
+    FilePath:        /opt/AMD/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_base.h
+    Replacements:    
+      - FilePath:        /home/nandanbali/programming/deep-svdd/inference-hls/inference_axis_ip/solution1/.autopilot/db/inference_axis.pp.0.cpp
+        Offset:          55549
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1207_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        /opt/AMD/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/nandanbali/programming/deep-svdd/inference-hls/inference_axis_ip/solution1/.autopilot/db/inference_axis.pp.0.cpp
+        Offset:          282817
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        /opt/AMD/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/nandanbali/programming/deep-svdd/inference-hls/inference_axis_ip/solution1/.autopilot/db/inference_axis.pp.0.cpp
+        Offset:          283281
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        /opt/AMD/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/nandanbali/programming/deep-svdd/inference-hls/inference_axis_ip/solution1/.autopilot/db/inference_axis.pp.0.cpp
+        Offset:          283746
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1247_1:  '
+    FileOffset:      1247
+    FilePath:        /opt/AMD/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h
+    Replacements:    
+      - FilePath:        /home/nandanbali/programming/deep-svdd/inference-hls/inference_axis_ip/solution1/.autopilot/db/inference_axis.pp.0.cpp
+        Offset:          566958
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1247_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_11_1:  '
+    FileOffset:      11
+    FilePath:        /home/nandanbali/programming/deep-svdd/inference-hls/relu.hpp
+    Replacements:    
+      - FilePath:        /home/nandanbali/programming/deep-svdd/inference-hls/inference_axis_ip/solution1/.autopilot/db/inference_axis.pp.0.cpp
+        Offset:          1027349
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_11_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_13_1:  '
+    FileOffset:      13
+    FilePath:        /home/nandanbali/programming/deep-svdd/inference-hls/dense.hpp
+    Replacements:    
+      - FilePath:        /home/nandanbali/programming/deep-svdd/inference-hls/inference_axis_ip/solution1/.autopilot/db/inference_axis.pp.0.cpp
+        Offset:          1027808
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_13_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_16_2:  '
+    FileOffset:      16
+    FilePath:        /home/nandanbali/programming/deep-svdd/inference-hls/dense.hpp
+    Replacements:    
+      - FilePath:        /home/nandanbali/programming/deep-svdd/inference-hls/inference_axis_ip/solution1/.autopilot/db/inference_axis.pp.0.cpp
+        Offset:          1027874
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_16_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_12_1:  '
+    FileOffset:      12
+    FilePath:        /home/nandanbali/programming/deep-svdd/inference-hls/score.hpp
+    Replacements:    
+      - FilePath:        /home/nandanbali/programming/deep-svdd/inference-hls/inference_axis_ip/solution1/.autopilot/db/inference_axis.pp.0.cpp
+        Offset:          1045571
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_12_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_21_1:  '
+    FileOffset:      21
+    FilePath:        /home/nandanbali/programming/deep-svdd/inference-hls/inference_axis.cpp
+    Replacements:    
+      - FilePath:        /home/nandanbali/programming/deep-svdd/inference-hls/inference_axis_ip/solution1/.autopilot/db/inference_axis.pp.0.cpp
+        Offset:          1047314
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_21_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_34_2:  '
+    FileOffset:      34
+    FilePath:        /home/nandanbali/programming/deep-svdd/inference-hls/inference_axis.cpp
+    Replacements:    
+      - FilePath:        /home/nandanbali/programming/deep-svdd/inference-hls/inference_axis_ip/solution1/.autopilot/db/inference_axis.pp.0.cpp
+        Offset:          1047679
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_34_2: '
+...

@@ -1,0 +1,309 @@
+
+
+================================================================
+== Synthesis Summary Report of 'deep_svdd_axis'
+================================================================
++ General Information: 
+    * Date:           Fri Nov 20 21:26:52 2026
+    * Version:        2023.2 (Build 4023990 on Oct 11 2023)
+    * Project:        inference_axis_ip
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +---------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+------+----------+------------+-----------+-----+
+    |                      Modules                      | Issue|      | Latency |  Latency  | Iteration|         | Trip |          |      |          |            |           |     |
+    |                      & Loops                      | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined| BRAM |    DSP   |     FF     |    LUT    | URAM|
+    +---------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+------+----------+------------+-----------+-----+
+    |+ deep_svdd_axis                                   |     -|  0.06|        -|          -|         -|        -|     -|        no|     -|  57 (25%)|   7751 (7%)|  4556 (8%)|    -|
+    | + deep_svdd_axis_Pipeline_VITIS_LOOP_34_2         |     -|  6.30|        -|          -|         -|        -|     -|        no|     -|         -|     2 (~0%)|   20 (~0%)|    -|
+    |  o VITIS_LOOP_34_2                                |     -|  7.30|        -|          -|         1|        1|     -|       yes|     -|         -|           -|          -|    -|
+    | + deep_svdd_inference                             |     -|  0.06|      158|  1.580e+03|         -|      158|     -|        no|     -|  57 (25%)|   7331 (6%)|  4094 (7%)|    -|
+    |  + deep_svdd_inference_Pipeline_VITIS_LOOP_13_1   |     -|  0.65|       40|    400.000|         -|       40|     -|        no|     -|    8 (3%)|  1048 (~0%)|   764 (1%)|    -|
+    |   o VITIS_LOOP_13_1                               |     -|  7.30|       38|    380.000|         8|        1|    32|       yes|     -|         -|           -|          -|    -|
+    |  + deep_svdd_inference_Pipeline_VITIS_LOOP_11_1   |     -|  2.30|       34|    340.000|         -|       34|     -|        no|     -|         -|   758 (~0%)|   90 (~0%)|    -|
+    |   o VITIS_LOOP_11_1                               |     -|  7.30|       32|    320.000|         2|        1|    32|       yes|     -|         -|           -|          -|    -|
+    |  + deep_svdd_inference_Pipeline_VITIS_LOOP_13_11  |     -|  0.06|       25|    250.000|         -|       25|     -|        no|     -|  31 (14%)|   3281 (3%)|  1822 (3%)|    -|
+    |   o VITIS_LOOP_13_1                               |     -|  7.30|       23|    230.000|         9|        1|    16|       yes|     -|         -|           -|          -|    -|
+    |  + deep_svdd_inference_Pipeline_VITIS_LOOP_11_12  |     -|  2.34|       18|    180.000|         -|       18|     -|        no|     -|         -|   372 (~0%)|   89 (~0%)|    -|
+    |   o VITIS_LOOP_11_1                               |     -|  7.30|       16|    160.000|         2|        1|    16|       yes|     -|         -|           -|          -|    -|
+    |  + deep_svdd_inference_Pipeline_VITIS_LOOP_13_13  |     -|  0.06|       17|    170.000|         -|       17|     -|        no|     -|   15 (6%)|   1618 (1%)|   917 (1%)|    -|
+    |   o VITIS_LOOP_13_1                               |     -|  7.30|       15|    150.000|         9|        1|     8|       yes|     -|         -|           -|          -|    -|
+    |  + deep_svdd_inference_Pipeline_VITIS_LOOP_12_1   |     -|  0.38|       12|    120.000|         -|       12|     -|        no|     -|    3 (1%)|   160 (~0%)|  212 (~0%)|    -|
+    |   o VITIS_LOOP_12_1                               |     -|  7.30|       10|    100.000|         4|        1|     8|       yes|     -|         -|           -|          -|    -|
+    | o VITIS_LOOP_21_1                                 |     -|  7.30|        8|     80.000|         1|        -|     8|        no|     -|         -|           -|          -|    -|
+    +---------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+------+----------+------------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AXIS
++-----------------+-----------+---------------+-------+-------+-------+--------+-------+--------+
+| Interface       | Direction | Register Mode | TDATA | TKEEP | TLAST | TREADY | TSTRB | TVALID |
++-----------------+-----------+---------------+-------+-------+-------+--------+-------+--------+
+| m_axis_score    | out       | both          | 64    | 8     | 1     | 1      | 8     | 1      |
+| s_axis_features | in        | both          | 32    | 4     | 1     | 1      | 4     | 1      |
++-----------------+-----------+---------------+-------+-------+-------+--------+-------+--------+
+
+* TOP LEVEL CONTROL
++-----------+--------------+----------+
+| Interface | Type         | Ports    |
++-----------+--------------+----------+
+| ap_clk    | clock        | ap_clk   |
+| ap_rst_n  | reset        | ap_rst_n |
+| ap_ctrl   | ap_ctrl_none |          |
++-----------+--------------+----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++-----------------+-----------+---------------------------------------------------------+
+| Argument        | Direction | Datatype                                                |
++-----------------+-----------+---------------------------------------------------------+
+| s_axis_features | in        | stream<hls::axis<ap_uint<32>, 0, 0, 0, '8', false>, 0>& |
+| m_axis_score    | out       | stream<hls::axis<ap_uint<64>, 0, 0, 0, '8', false>, 0>& |
++-----------------+-----------+---------------------------------------------------------+
+
+* SW-to-HW Mapping
++-----------------+-----------------+-----------+
+| Argument        | HW Interface    | HW Type   |
++-----------------+-----------------+-----------+
+| s_axis_features | s_axis_features | interface |
+| m_axis_score    | m_axis_score    | interface |
++-----------------+-----------------+-----------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+
+================================================================
+== Bind Op Report
+================================================================
++---------------------------------------------------+-----+--------+-------------+-----+-----------+---------+
+| Name                                              | DSP | Pragma | Variable    | Op  | Impl      | Latency |
++---------------------------------------------------+-----+--------+-------------+-----+-----------+---------+
+| + deep_svdd_axis                                  | 57  |        |             |     |           |         |
+|   add_ln21_fu_479_p2                              |     |        | add_ln21    | add | fabric    | 0       |
+|  + deep_svdd_inference                            | 57  |        |             |     |           |         |
+|   + deep_svdd_inference_Pipeline_VITIS_LOOP_13_1  | 8   |        |             |     |           |         |
+|     add_ln13_fu_319_p2                            |     |        | add_ln13    | add | fabric    | 0       |
+|     mul_18s_25s_43_1_1_U5                         | 1   |        | product_45  | mul | auto      | 0       |
+|     mul_17s_25s_42_1_1_U6                         | 1   |        | product     | mul | auto      | 0       |
+|     mac_muladd_17s_25s_42s_42_4_1_U9              | 1   |        | product_40  | mul | dsp_slice | 3       |
+|     mac_muladd_17s_25s_42s_42_4_1_U10             | 1   |        | product_41  | mul | dsp_slice | 3       |
+|     mul_17s_25s_42_1_1_U7                         | 1   |        | product_42  | mul | auto      | 0       |
+|     mul_18s_25s_42_1_1_U8                         | 1   |        | mul_ln17    | mul | auto      | 0       |
+|     mac_muladd_17s_25s_42s_42_4_1_U11             | 1   |        | product_43  | mul | dsp_slice | 3       |
+|     mac_muladd_17s_25s_43s_43_4_1_U12             | 1   |        | product_44  | mul | dsp_slice | 3       |
+|     mac_muladd_17s_25s_42s_42_4_1_U11             | 1   |        | add_ln18    | add | dsp_slice | 3       |
+|     mac_muladd_17s_25s_42s_42_4_1_U10             | 1   |        | add_ln18_1  | add | dsp_slice | 3       |
+|     add_ln18_2_fu_412_p2                          |     |        | add_ln18_2  | add | fabric    | 0       |
+|     mac_muladd_17s_25s_42s_42_4_1_U9              | 1   |        | add_ln18_3  | add | dsp_slice | 3       |
+|     mac_muladd_17s_25s_43s_43_4_1_U12             | 1   |        | add_ln18_4  | add | dsp_slice | 3       |
+|     add_ln18_5_fu_393_p2                          |     |        | add_ln18_5  | add | fabric    | 0       |
+|     sum_3_fu_430_p2                               |     |        | sum_3       | add | fabric    | 0       |
+|     add_ln21_fu_524_p2                            |     |        | add_ln21    | add | fabric    | 0       |
+|   + deep_svdd_inference_Pipeline_VITIS_LOOP_11_1  | 0   |        |             |     |           |         |
+|     add_ln11_fu_532_p2                            |     |        | add_ln11    | add | fabric    | 0       |
+|   + deep_svdd_inference_Pipeline_VITIS_LOOP_13_11 | 31  |        |             |     |           |         |
+|     add_ln13_fu_934_p2                            |     |        | add_ln13    | add | fabric    | 0       |
+|     mul_16s_25s_41_1_1_U67                        | 1   |        | product_38  | mul | auto      | 0       |
+|     mul_16s_25s_41_1_1_U68                        | 1   |        | product     | mul | auto      | 0       |
+|     mac_muladd_17s_25s_41s_41_4_1_U82             | 1   |        | mul_ln17_5  | mul | dsp_slice | 3       |
+|     mac_muladd_16s_25s_42s_42_4_1_U83             | 1   |        | product_13  | mul | dsp_slice | 3       |
+|     mac_muladd_16s_25s_41s_41_4_1_U84             | 1   |        | product_14  | mul | dsp_slice | 3       |
+|     mul_17s_25s_41_1_1_U69                        | 1   |        | mul_ln17_8  | mul | auto      | 0       |
+|     mul_17s_25s_42_1_1_U70                        | 1   |        | product_15  | mul | auto      | 0       |
+|     mul_16s_25s_41_1_1_U71                        | 1   |        | product_16  | mul | auto      | 0       |
+|     mac_muladd_16s_25s_41s_41_4_1_U85             | 1   |        | product_17  | mul | dsp_slice | 3       |
+|     mul_16s_25s_41_1_1_U72                        | 1   |        | product_18  | mul | auto      | 0       |
+|     mac_muladd_17s_25s_41s_41_4_1_U86             | 1   |        | mul_ln17    | mul | dsp_slice | 3       |
+|     mul_16s_25s_41_1_1_U73                        | 1   |        | product_19  | mul | auto      | 0       |
+|     mac_muladd_16s_25s_41s_41_4_1_U87             | 1   |        | product_20  | mul | dsp_slice | 3       |
+|     mul_17s_25s_42_1_1_U74                        | 1   |        | product_21  | mul | auto      | 0       |
+|     mac_muladd_16s_25s_41s_41_4_1_U88             | 1   |        | product_22  | mul | dsp_slice | 3       |
+|     mac_muladd_17s_25s_41s_41_4_1_U89             | 1   |        | mul_ln17_14 | mul | dsp_slice | 3       |
+|     mac_muladd_17s_25s_42s_42_4_1_U90             | 1   |        | product_23  | mul | dsp_slice | 3       |
+|     mul_17s_25s_42_1_1_U75                        | 1   |        | product_24  | mul | auto      | 0       |
+|     mul_17s_25s_42_1_1_U76                        | 1   |        | product_25  | mul | auto      | 0       |
+|     mac_muladd_16s_25s_42s_42_4_1_U91             | 1   |        | product_26  | mul | dsp_slice | 3       |
+|     mul_17s_25s_42_1_1_U77                        | 1   |        | product_27  | mul | auto      | 0       |
+|     mac_muladd_16s_25s_42s_42_4_1_U92             | 1   |        | product_28  | mul | dsp_slice | 3       |
+|     mul_17s_25s_42_1_1_U78                        | 1   |        | product_29  | mul | auto      | 0       |
+|     mul_17s_25s_42_1_1_U79                        | 1   |        | product_30  | mul | auto      | 0       |
+|     mul_16s_25s_41_1_1_U80                        | 1   |        | product_31  | mul | auto      | 0       |
+|     mac_muladd_16s_25s_42s_42_4_1_U93             | 1   |        | product_32  | mul | dsp_slice | 3       |
+|     mac_muladd_16s_25s_42s_42_4_1_U94             | 1   |        | product_33  | mul | dsp_slice | 3       |
+|     mac_muladd_16s_25s_42s_42_4_1_U95             | 1   |        | product_34  | mul | dsp_slice | 3       |
+|     mac_muladd_17s_25s_42s_42_4_1_U97             | 1   |        | product_35  | mul | dsp_slice | 3       |
+|     mul_17s_25s_42_1_1_U81                        | 1   |        | product_36  | mul | auto      | 0       |
+|     mac_muladd_16s_25s_42s_42_4_1_U96             | 1   |        | product_37  | mul | dsp_slice | 3       |
+|     mac_muladd_16s_25s_42s_42_4_1_U95             | 1   |        | add_ln18_8  | add | dsp_slice | 3       |
+|     mac_muladd_17s_25s_42s_42_4_1_U97             | 1   |        | add_ln18_9  | add | dsp_slice | 3       |
+|     mac_muladd_16s_25s_42s_42_4_1_U94             | 1   |        | add_ln18_10 | add | dsp_slice | 3       |
+|     mac_muladd_16s_25s_42s_42_4_1_U93             | 1   |        | add_ln18_11 | add | dsp_slice | 3       |
+|     add_ln18_12_fu_1169_p2                        |     |        | add_ln18_12 | add | fabric    | 0       |
+|     add_ln18_13_fu_1245_p2                        |     |        | add_ln18_13 | add | fabric    | 0       |
+|     mac_muladd_17s_25s_41s_41_4_1_U89             | 1   |        | add_ln18    | add | dsp_slice | 3       |
+|     mac_muladd_17s_25s_42s_42_4_1_U90             | 1   |        | add_ln18_14 | add | dsp_slice | 3       |
+|     add_ln18_15_fu_1181_p2                        |     |        | add_ln18_15 | add | fabric    | 0       |
+|     mac_muladd_16s_25s_42s_42_4_1_U91             | 1   |        | add_ln18_16 | add | dsp_slice | 3       |
+|     mac_muladd_16s_25s_42s_42_4_1_U92             | 1   |        | add_ln18_17 | add | dsp_slice | 3       |
+|     add_ln18_18_fu_1193_p2                        |     |        | add_ln18_18 | add | fabric    | 0       |
+|     add_ln18_19_fu_1257_p2                        |     |        | add_ln18_19 | add | fabric    | 0       |
+|     add_ln18_20_fu_1307_p2                        |     |        | add_ln18_20 | add | fabric    | 0       |
+|     mac_muladd_17s_25s_41s_41_4_1_U82             | 1   |        | add_ln18_21 | add | dsp_slice | 3       |
+|     mac_muladd_16s_25s_41s_41_4_1_U84             | 1   |        | add_ln18_22 | add | dsp_slice | 3       |
+|     add_ln18_23_fu_1205_p2                        |     |        | add_ln18_23 | add | fabric    | 0       |
+|     mac_muladd_16s_25s_42s_42_4_1_U83             | 1   |        | add_ln18_24 | add | dsp_slice | 3       |
+|     mac_muladd_16s_25s_41s_41_4_1_U85             | 1   |        | add_ln18_25 | add | dsp_slice | 3       |
+|     add_ln18_26_fu_1214_p2                        |     |        | add_ln18_26 | add | fabric    | 0       |
+|     add_ln18_27_fu_1269_p2                        |     |        | add_ln18_27 | add | fabric    | 0       |
+|     mac_muladd_17s_25s_41s_41_4_1_U86             | 1   |        | add_ln18_28 | add | dsp_slice | 3       |
+|     mac_muladd_16s_25s_41s_41_4_1_U87             | 1   |        | add_ln18_29 | add | dsp_slice | 3       |
+|     add_ln18_30_fu_1225_p2                        |     |        | add_ln18_30 | add | fabric    | 0       |
+|     mac_muladd_16s_25s_41s_41_4_1_U88             | 1   |        | add_ln18_31 | add | dsp_slice | 3       |
+|     mac_muladd_16s_25s_42s_42_4_1_U96             | 1   |        | add_ln18_32 | add | dsp_slice | 3       |
+|     add_ln18_33_fu_1234_p2                        |     |        | add_ln18_33 | add | fabric    | 0       |
+|     add_ln18_34_fu_1285_p2                        |     |        | add_ln18_34 | add | fabric    | 0       |
+|     add_ln18_35_fu_1295_p2                        |     |        | add_ln18_35 | add | fabric    | 0       |
+|     sum_2_fu_1320_p2                              |     |        | sum_2       | add | fabric    | 0       |
+|     add_ln21_fu_1409_p2                           |     |        | add_ln21    | add | fabric    | 0       |
+|   + deep_svdd_inference_Pipeline_VITIS_LOOP_11_12 | 0   |        |             |     |           |         |
+|     add_ln11_fu_292_p2                            |     |        | add_ln11    | add | fabric    | 0       |
+|   + deep_svdd_inference_Pipeline_VITIS_LOOP_13_13 | 15  |        |             |     |           |         |
+|     add_ln13_fu_504_p2                            |     |        | add_ln13    | add | fabric    | 0       |
+|     mul_16s_25s_41_1_1_U182                       | 1   |        | product_12  | mul | auto      | 0       |
+|     mul_16s_25s_41_1_1_U183                       | 1   |        | product     | mul | auto      | 0       |
+|     mac_muladd_16s_25s_41s_41_4_1_U189            | 1   |        | product_1   | mul | dsp_slice | 3       |
+|     mul_16s_25s_41_1_1_U184                       | 1   |        | product_2   | mul | auto      | 0       |
+|     mac_muladd_16s_25s_41s_41_4_1_U190            | 1   |        | product_3   | mul | dsp_slice | 3       |
+|     mul_17s_25s_41_1_1_U185                       | 1   |        | mul_ln17    | mul | auto      | 0       |
+|     mac_muladd_17s_25s_41s_41_4_1_U191            | 1   |        | mul_ln17_1  | mul | dsp_slice | 3       |
+|     mul_17s_25s_42_1_1_U186                       | 1   |        | product_4   | mul | auto      | 0       |
+|     mul_17s_25s_42_1_1_U187                       | 1   |        | product_5   | mul | auto      | 0       |
+|     mac_muladd_16s_25s_42s_42_4_1_U193            | 1   |        | product_6   | mul | dsp_slice | 3       |
+|     mac_muladd_16s_25s_42s_42_4_1_U194            | 1   |        | product_7   | mul | dsp_slice | 3       |
+|     mac_muladd_16s_25s_41s_41_4_1_U195            | 1   |        | product_8   | mul | dsp_slice | 3       |
+|     mac_muladd_17s_25s_41s_42_4_1_U196            | 1   |        | product_9   | mul | dsp_slice | 3       |
+|     mul_16s_25s_41_1_1_U188                       | 1   |        | product_10  | mul | auto      | 0       |
+|     mac_muladd_16s_25s_41s_41_4_1_U192            | 1   |        | product_11  | mul | dsp_slice | 3       |
+|     mac_muladd_16s_25s_41s_41_4_1_U195            | 1   |        | add_ln18    | add | dsp_slice | 3       |
+|     mac_muladd_17s_25s_41s_42_4_1_U196            | 1   |        | add_ln18_1  | add | dsp_slice | 3       |
+|     mac_muladd_16s_25s_42s_42_4_1_U194            | 1   |        | add_ln18_2  | add | dsp_slice | 3       |
+|     mac_muladd_16s_25s_42s_42_4_1_U193            | 1   |        | add_ln18_3  | add | dsp_slice | 3       |
+|     add_ln18_4_fu_648_p2                          |     |        | add_ln18_4  | add | fabric    | 0       |
+|     mac_muladd_16s_25s_41s_41_4_1_U189            | 1   |        | add_ln18_6  | add | dsp_slice | 3       |
+|     mac_muladd_16s_25s_41s_41_4_1_U190            | 1   |        | add_ln18_7  | add | dsp_slice | 3       |
+|     add_ln18_8_fu_621_p2                          |     |        | add_ln18_8  | add | fabric    | 0       |
+|     mac_muladd_17s_25s_41s_41_4_1_U191            | 1   |        | add_ln18_9  | add | dsp_slice | 3       |
+|     mac_muladd_16s_25s_41s_41_4_1_U192            | 1   |        | add_ln18_10 | add | dsp_slice | 3       |
+|     add_ln18_11_fu_633_p2                         |     |        | add_ln18_11 | add | fabric    | 0       |
+|     add_ln18_12_fu_660_p2                         |     |        | add_ln18_12 | add | fabric    | 0       |
+|     add_ln21_fu_770_p2                            |     |        | add_ln21    | add | fabric    | 0       |
+|   + deep_svdd_inference_Pipeline_VITIS_LOOP_12_1  | 3   |        |             |     |           |         |
+|     add_ln12_fu_100_p2                            |     |        | add_ln12    | add | fabric    | 0       |
+|     delta_fu_125_p2                               |     |        | delta       | sub | fabric    | 0       |
+|     mul_26s_26s_50_1_1_U229                       | 3   |        | mul_ln14    | mul | auto      | 0       |
+|     add_ln14_fu_142_p2                            |     |        | add_ln14    | add | fabric    | 0       |
++---------------------------------------------------+-----+--------+-------------+-----+-----------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++---------------------------------------------------+--------------+------+------+------+--------+------------+------+---------+------------------+
+| Name                                              | Usage        | Type | BRAM | URAM | Pragma | Variable   | Impl | Latency | Bitwidth, Depth, |
+|                                                   |              |      |      |      |        |            |      |         | Banks            |
++---------------------------------------------------+--------------+------+------+------+--------+------------+------+---------+------------------+
+| + deep_svdd_axis                                  |              |      | 0    | 0    |        |            |      |         |                  |
+|  + deep_svdd_inference                            |              |      | 0    | 0    |        |            |      |         |                  |
+|    pre1_U                                         | ram_1p array |      |      |      |        | pre1       | auto | 1       | 25, 32, 1        |
+|    pre2_U                                         | ram_1p array |      |      |      |        | pre2       | auto | 1       | 25, 16, 1        |
+|    embedding_U                                    | ram_1p array |      |      |      |        | embedding  | auto | 1       | 25, 8, 1         |
+|   + deep_svdd_inference_Pipeline_VITIS_LOOP_13_1  |              |      | 0    | 0    |        |            |      |         |                  |
+|     p_ZL2W1_0_U                                   | rom_1p       |      |      |      |        | p_ZL2W1_0  | auto | 1       | 18, 32, 1        |
+|     p_ZL2W1_1_U                                   | rom_1p       |      |      |      |        | p_ZL2W1_1  | auto | 1       | 17, 32, 1        |
+|     p_ZL2W1_2_U                                   | rom_1p       |      |      |      |        | p_ZL2W1_2  | auto | 1       | 17, 32, 1        |
+|     p_ZL2W1_3_U                                   | rom_1p       |      |      |      |        | p_ZL2W1_3  | auto | 1       | 17, 32, 1        |
+|     p_ZL2W1_4_U                                   | rom_1p       |      |      |      |        | p_ZL2W1_4  | auto | 1       | 17, 32, 1        |
+|     p_ZL2W1_5_U                                   | rom_1p       |      |      |      |        | p_ZL2W1_5  | auto | 1       | 18, 32, 1        |
+|     p_ZL2W1_6_U                                   | rom_1p       |      |      |      |        | p_ZL2W1_6  | auto | 1       | 17, 32, 1        |
+|     p_ZL2W1_7_U                                   | rom_1p       |      |      |      |        | p_ZL2W1_7  | auto | 1       | 17, 32, 1        |
+|   + deep_svdd_inference_Pipeline_VITIS_LOOP_13_11 |              |      | 0    | 0    |        |            |      |         |                  |
+|     p_ZL2W2_0_U                                   | rom_1p       |      |      |      |        | p_ZL2W2_0  | auto | 1       | 16, 16, 1        |
+|     p_ZL2W2_1_U                                   | rom_1p       |      |      |      |        | p_ZL2W2_1  | auto | 1       | 16, 16, 1        |
+|     p_ZL2W2_2_U                                   | rom_1p       |      |      |      |        | p_ZL2W2_2  | auto | 1       | 17, 16, 1        |
+|     p_ZL2W2_3_U                                   | rom_1p       |      |      |      |        | p_ZL2W2_3  | auto | 1       | 16, 16, 1        |
+|     p_ZL2W2_4_U                                   | rom_1p       |      |      |      |        | p_ZL2W2_4  | auto | 1       | 16, 16, 1        |
+|     p_ZL2W2_5_U                                   | rom_1p       |      |      |      |        | p_ZL2W2_5  | auto | 1       | 17, 16, 1        |
+|     p_ZL2W2_6_U                                   | rom_1p       |      |      |      |        | p_ZL2W2_6  | auto | 1       | 17, 16, 1        |
+|     p_ZL2W2_7_U                                   | rom_1p       |      |      |      |        | p_ZL2W2_7  | auto | 1       | 16, 16, 1        |
+|     p_ZL2W2_8_U                                   | rom_1p       |      |      |      |        | p_ZL2W2_8  | auto | 1       | 16, 16, 1        |
+|     p_ZL2W2_9_U                                   | rom_1p       |      |      |      |        | p_ZL2W2_9  | auto | 1       | 16, 16, 1        |
+|     p_ZL2W2_10_U                                  | rom_1p       |      |      |      |        | p_ZL2W2_10 | auto | 1       | 17, 16, 1        |
+|     p_ZL2W2_11_U                                  | rom_1p       |      |      |      |        | p_ZL2W2_11 | auto | 1       | 16, 16, 1        |
+|     p_ZL2W2_12_U                                  | rom_1p       |      |      |      |        | p_ZL2W2_12 | auto | 1       | 16, 16, 1        |
+|     p_ZL2W2_13_U                                  | rom_1p       |      |      |      |        | p_ZL2W2_13 | auto | 1       | 17, 16, 1        |
+|     p_ZL2W2_15_U                                  | rom_1p       |      |      |      |        | p_ZL2W2_15 | auto | 1       | 16, 16, 1        |
+|     p_ZL2W2_16_U                                  | rom_1p       |      |      |      |        | p_ZL2W2_16 | auto | 1       | 17, 16, 1        |
+|     p_ZL2W2_17_U                                  | rom_1p       |      |      |      |        | p_ZL2W2_17 | auto | 1       | 17, 16, 1        |
+|     p_ZL2W2_18_U                                  | rom_1p       |      |      |      |        | p_ZL2W2_18 | auto | 1       | 17, 16, 1        |
+|     p_ZL2W2_19_U                                  | rom_1p       |      |      |      |        | p_ZL2W2_19 | auto | 1       | 17, 16, 1        |
+|     p_ZL2W2_20_U                                  | rom_1p       |      |      |      |        | p_ZL2W2_20 | auto | 1       | 16, 16, 1        |
+|     p_ZL2W2_21_U                                  | rom_1p       |      |      |      |        | p_ZL2W2_21 | auto | 1       | 17, 16, 1        |
+|     p_ZL2W2_22_U                                  | rom_1p       |      |      |      |        | p_ZL2W2_22 | auto | 1       | 16, 16, 1        |
+|     p_ZL2W2_23_U                                  | rom_1p       |      |      |      |        | p_ZL2W2_23 | auto | 1       | 17, 16, 1        |
+|     p_ZL2W2_24_U                                  | rom_1p       |      |      |      |        | p_ZL2W2_24 | auto | 1       | 17, 16, 1        |
+|     p_ZL2W2_25_U                                  | rom_1p       |      |      |      |        | p_ZL2W2_25 | auto | 1       | 16, 16, 1        |
+|     p_ZL2W2_26_U                                  | rom_1p       |      |      |      |        | p_ZL2W2_26 | auto | 1       | 16, 16, 1        |
+|     p_ZL2W2_27_U                                  | rom_1p       |      |      |      |        | p_ZL2W2_27 | auto | 1       | 16, 16, 1        |
+|     p_ZL2W2_28_U                                  | rom_1p       |      |      |      |        | p_ZL2W2_28 | auto | 1       | 16, 16, 1        |
+|     p_ZL2W2_29_U                                  | rom_1p       |      |      |      |        | p_ZL2W2_29 | auto | 1       | 17, 16, 1        |
+|     p_ZL2W2_30_U                                  | rom_1p       |      |      |      |        | p_ZL2W2_30 | auto | 1       | 17, 16, 1        |
+|     p_ZL2W2_31_U                                  | rom_1p       |      |      |      |        | p_ZL2W2_31 | auto | 1       | 16, 16, 1        |
+|   + deep_svdd_inference_Pipeline_VITIS_LOOP_13_13 |              |      | 0    | 0    |        |            |      |         |                  |
+|     p_ZL2W3_0_U                                   | rom_1p       |      |      |      |        | p_ZL2W3_0  | auto | 1       | 16, 8, 1         |
+|     p_ZL2W3_1_U                                   | rom_1p       |      |      |      |        | p_ZL2W3_1  | auto | 1       | 16, 8, 1         |
+|     p_ZL2W3_2_U                                   | rom_1p       |      |      |      |        | p_ZL2W3_2  | auto | 1       | 16, 8, 1         |
+|     p_ZL2W3_3_U                                   | rom_1p       |      |      |      |        | p_ZL2W3_3  | auto | 1       | 16, 8, 1         |
+|     p_ZL2W3_4_U                                   | rom_1p       |      |      |      |        | p_ZL2W3_4  | auto | 1       | 16, 8, 1         |
+|     p_ZL2W3_5_U                                   | rom_1p       |      |      |      |        | p_ZL2W3_5  | auto | 1       | 17, 8, 1         |
+|     p_ZL2W3_6_U                                   | rom_1p       |      |      |      |        | p_ZL2W3_6  | auto | 1       | 17, 8, 1         |
+|     p_ZL2W3_7_U                                   | rom_1p       |      |      |      |        | p_ZL2W3_7  | auto | 1       | 17, 8, 1         |
+|     p_ZL2W3_8_U                                   | rom_1p       |      |      |      |        | p_ZL2W3_8  | auto | 1       | 17, 8, 1         |
+|     p_ZL2W3_9_U                                   | rom_1p       |      |      |      |        | p_ZL2W3_9  | auto | 1       | 16, 8, 1         |
+|     p_ZL2W3_10_U                                  | rom_1p       |      |      |      |        | p_ZL2W3_10 | auto | 1       | 16, 8, 1         |
+|     p_ZL2W3_11_U                                  | rom_1p       |      |      |      |        | p_ZL2W3_11 | auto | 1       | 16, 8, 1         |
+|     p_ZL2W3_12_U                                  | rom_1p       |      |      |      |        | p_ZL2W3_12 | auto | 1       | 17, 8, 1         |
+|     p_ZL2W3_13_U                                  | rom_1p       |      |      |      |        | p_ZL2W3_13 | auto | 1       | 16, 8, 1         |
+|     p_ZL2W3_14_U                                  | rom_1p       |      |      |      |        | p_ZL2W3_14 | auto | 1       | 16, 8, 1         |
+|   + deep_svdd_inference_Pipeline_VITIS_LOOP_12_1  |              |      | 0    | 0    |        |            |      |         |                  |
+|     CENTER_U                                      | rom_1p       |      |      |      |        | CENTER     | auto | 1       | 18, 8, 1         |
++---------------------------------------------------+--------------+------+------+------+--------+------------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+----------------------------------------------+---------------------------------------------------------+
+| Type      | Options                                      | Location                                                |
++-----------+----------------------------------------------+---------------------------------------------------------+
+| interface | axis port=s_axis_features register_mode=both | inference_axis.cpp:7 in deep_svdd_axis, s_axis_features |
+| interface | axis port=m_axis_score register_mode=both    | inference_axis.cpp:8 in deep_svdd_axis, m_axis_score    |
+| interface | ap_ctrl_none port=return                     | inference_axis.cpp:9 in deep_svdd_axis, return          |
+| pipeline  | off                                          | inference_axis.cpp:22 in deep_svdd_axis                 |
++-----------+----------------------------------------------+---------------------------------------------------------+
+
+

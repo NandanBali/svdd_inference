@@ -1,0 +1,102 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/nandanbali/programming/deep-svdd/inference-hls/build_axis.tcl:14:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="deep_svdd_axis" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=deep_svdd_axis" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/nandanbali/programming/deep-svdd/inference-hls/inference_axis.cpp:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="deep_svdd_axis" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=s_axis_features register_mode=both" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/nandanbali/programming/deep-svdd/inference-hls/inference_axis.cpp:8:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="deep_svdd_axis" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=m_axis_score register_mode=both" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/nandanbali/programming/deep-svdd/inference-hls/inference_axis.cpp:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="deep_svdd_axis" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_ctrl_none port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/nandanbali/programming/deep-svdd/inference-hls/inference_axis.cpp:22:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="deep_svdd_axis" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/home/nandanbali/programming/deep-svdd/inference-hls/inference.hpp:6:0" msg_body="Inlining function 'void dense_layer&lt;8, 32&gt;(ap_fixed&lt;25, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;25, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const (*) [8], ap_fixed&lt;25, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)' into 'deep_svdd_inference(ap_fixed&lt;25, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)'">
+        <args Callee="void dense_layer&lt;8, 32&gt;(ap_fixed&lt;25, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;25, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const (*) [8], ap_fixed&lt;25, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Callee-DebugLoc="File /home/nandanbali/programming/deep-svdd/inference-hls/dense.hpp Line 8 Column 0" Caller="deep_svdd_inference(ap_fixed&lt;25, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)" Caller-DebugLoc="File /home/nandanbali/programming/deep-svdd/inference-hls/inference.hpp Line 6 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/home/nandanbali/programming/deep-svdd/inference-hls/inference.hpp:6:0" msg_body="Inlining function 'void relu_layer&lt;32&gt;(ap_fixed&lt;25, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;25, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)' into 'deep_svdd_inference(ap_fixed&lt;25, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)'">
+        <args Callee="void relu_layer&lt;32&gt;(ap_fixed&lt;25, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;25, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Callee-DebugLoc="File /home/nandanbali/programming/deep-svdd/inference-hls/relu.hpp Line 8 Column 0" Caller="deep_svdd_inference(ap_fixed&lt;25, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)" Caller-DebugLoc="File /home/nandanbali/programming/deep-svdd/inference-hls/inference.hpp Line 6 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/home/nandanbali/programming/deep-svdd/inference-hls/inference.hpp:6:0" msg_body="Inlining function 'void dense_layer&lt;32, 16&gt;(ap_fixed&lt;25, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;25, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const (*) [32], ap_fixed&lt;25, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)' into 'deep_svdd_inference(ap_fixed&lt;25, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)'">
+        <args Callee="void dense_layer&lt;32, 16&gt;(ap_fixed&lt;25, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;25, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const (*) [32], ap_fixed&lt;25, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Callee-DebugLoc="File /home/nandanbali/programming/deep-svdd/inference-hls/dense.hpp Line 8 Column 0" Caller="deep_svdd_inference(ap_fixed&lt;25, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)" Caller-DebugLoc="File /home/nandanbali/programming/deep-svdd/inference-hls/inference.hpp Line 6 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/home/nandanbali/programming/deep-svdd/inference-hls/inference.hpp:6:0" msg_body="Inlining function 'void relu_layer&lt;16&gt;(ap_fixed&lt;25, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;25, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)' into 'deep_svdd_inference(ap_fixed&lt;25, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)'">
+        <args Callee="void relu_layer&lt;16&gt;(ap_fixed&lt;25, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;25, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Callee-DebugLoc="File /home/nandanbali/programming/deep-svdd/inference-hls/relu.hpp Line 8 Column 0" Caller="deep_svdd_inference(ap_fixed&lt;25, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)" Caller-DebugLoc="File /home/nandanbali/programming/deep-svdd/inference-hls/inference.hpp Line 6 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/home/nandanbali/programming/deep-svdd/inference-hls/inference.hpp:6:0" msg_body="Inlining function 'void dense_layer&lt;16, 8&gt;(ap_fixed&lt;25, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;25, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const (*) [16], ap_fixed&lt;25, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)' into 'deep_svdd_inference(ap_fixed&lt;25, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)'">
+        <args Callee="void dense_layer&lt;16, 8&gt;(ap_fixed&lt;25, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;25, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const (*) [16], ap_fixed&lt;25, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Callee-DebugLoc="File /home/nandanbali/programming/deep-svdd/inference-hls/dense.hpp Line 8 Column 0" Caller="deep_svdd_inference(ap_fixed&lt;25, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)" Caller-DebugLoc="File /home/nandanbali/programming/deep-svdd/inference-hls/inference.hpp Line 6 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/home/nandanbali/programming/deep-svdd/inference-hls/inference.hpp:6:0" msg_body="Inlining function 'ap_ufixed&lt;64, 32, (ap_q_mode)5, (ap_o_mode)3, 0&gt; svdd_score&lt;8&gt;(ap_fixed&lt;25, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;25, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)' into 'deep_svdd_inference(ap_fixed&lt;25, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)'">
+        <args Callee="ap_ufixed&lt;64, 32, (ap_q_mode)5, (ap_o_mode)3, 0&gt; svdd_score&lt;8&gt;(ap_fixed&lt;25, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;25, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)" Callee-DebugLoc="File /home/nandanbali/programming/deep-svdd/inference-hls/score.hpp Line 9 Column 0" Caller="deep_svdd_inference(ap_fixed&lt;25, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)" Caller-DebugLoc="File /home/nandanbali/programming/deep-svdd/inference-hls/inference.hpp Line 6 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="/home/nandanbali/programming/deep-svdd/inference-hls/dense.hpp:16:20" msg_body="Loop 'VITIS_LOOP_16_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_16_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="/home/nandanbali/programming/deep-svdd/inference-hls/inference.hpp:6:0" msg_body="Unrolling loop 'VITIS_LOOP_16_2' (/home/nandanbali/programming/deep-svdd/inference-hls/dense.hpp:16:20) in function 'deep_svdd_inference' completely with a factor of 16">
+        <args Factor="16" LoopLoc="/home/nandanbali/programming/deep-svdd/inference-hls/dense.hpp:16:20" LoopName="VITIS_LOOP_16_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="/home/nandanbali/programming/deep-svdd/inference-hls/inference.hpp:6:0" msg_body="Unrolling loop 'VITIS_LOOP_16_2' (/home/nandanbali/programming/deep-svdd/inference-hls/dense.hpp:16:20) in function 'deep_svdd_inference' completely with a factor of 32">
+        <args Factor="32" LoopLoc="/home/nandanbali/programming/deep-svdd/inference-hls/dense.hpp:16:20" LoopName="VITIS_LOOP_16_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="/home/nandanbali/programming/deep-svdd/inference-hls/inference.hpp:6:0" msg_body="Unrolling loop 'VITIS_LOOP_16_2' (/home/nandanbali/programming/deep-svdd/inference-hls/dense.hpp:16:20) in function 'deep_svdd_inference' completely with a factor of 8">
+        <args Factor="8" LoopLoc="/home/nandanbali/programming/deep-svdd/inference-hls/dense.hpp:16:20" LoopName="VITIS_LOOP_16_2"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="/home/nandanbali/programming/deep-svdd/inference-hls/model_params.hpp:7:0" msg_body="array_partition dim=2 type=complete  variable=_ZL2W1 1 deep_svdd_axis /home/nandanbali/programming/deep-svdd/inference-hls/model_params.hpp:7:0 W1">
+        <args PragmaFunction="deep_svdd_axis" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=_ZL2W1" PragmaType="array_partition" VarName="W1" varLoc="/home/nandanbali/programming/deep-svdd/inference-hls/model_params.hpp:7:0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="/home/nandanbali/programming/deep-svdd/inference-hls/model_params.hpp:7:0" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'W1' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="W1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="/home/nandanbali/programming/deep-svdd/inference-hls/model_params.hpp:42:0" msg_body="array_partition dim=2 type=complete  variable=_ZL2W2 1 deep_svdd_axis /home/nandanbali/programming/deep-svdd/inference-hls/model_params.hpp:42:0 W2">
+        <args PragmaFunction="deep_svdd_axis" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=_ZL2W2" PragmaType="array_partition" VarName="W2" varLoc="/home/nandanbali/programming/deep-svdd/inference-hls/model_params.hpp:42:0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="/home/nandanbali/programming/deep-svdd/inference-hls/model_params.hpp:42:0" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'W2' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="W2" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="/home/nandanbali/programming/deep-svdd/inference-hls/model_params.hpp:61:0" msg_body="array_partition dim=2 type=complete  variable=_ZL2W3 1 deep_svdd_axis /home/nandanbali/programming/deep-svdd/inference-hls/model_params.hpp:61:0 W3">
+        <args PragmaFunction="deep_svdd_axis" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=_ZL2W3" PragmaType="array_partition" VarName="W3" varLoc="/home/nandanbali/programming/deep-svdd/inference-hls/model_params.hpp:61:0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="/home/nandanbali/programming/deep-svdd/inference-hls/model_params.hpp:61:0" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'W3' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="W3" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="/home/nandanbali/programming/deep-svdd/inference-hls/inference.hpp:7:25" msg_body="array_partition dim=1 type=complete  variable=hidden1 1 deep_svdd_inference /home/nandanbali/programming/deep-svdd/inference-hls/inference.hpp:7:25 hidden1">
+        <args PragmaFunction="deep_svdd_inference" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=hidden1" PragmaType="array_partition" VarName="hidden1" varLoc="/home/nandanbali/programming/deep-svdd/inference-hls/inference.hpp:7:25"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="/home/nandanbali/programming/deep-svdd/inference-hls/inference.hpp:7:25" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'hidden1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="hidden1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="/home/nandanbali/programming/deep-svdd/inference-hls/inference.hpp:8:25" msg_body="array_partition dim=1 type=complete  variable=hidden2 1 deep_svdd_inference /home/nandanbali/programming/deep-svdd/inference-hls/inference.hpp:8:25 hidden2">
+        <args PragmaFunction="deep_svdd_inference" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=hidden2" PragmaType="array_partition" VarName="hidden2" varLoc="/home/nandanbali/programming/deep-svdd/inference-hls/inference.hpp:8:25"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="/home/nandanbali/programming/deep-svdd/inference-hls/inference.hpp:8:25" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'hidden2' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="hidden2" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="/home/nandanbali/programming/deep-svdd/inference-hls/inference_axis.cpp:17:18" msg_body="array_partition dim=1 type=complete  variable=features 1 deep_svdd_axis /home/nandanbali/programming/deep-svdd/inference-hls/inference_axis.cpp:17:18 features">
+        <args PragmaFunction="deep_svdd_axis" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=features" PragmaType="array_partition" VarName="features" varLoc="/home/nandanbali/programming/deep-svdd/inference-hls/inference_axis.cpp:17:18"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="/home/nandanbali/programming/deep-svdd/inference-hls/inference_axis.cpp:17:18" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'features' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="features" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/nandanbali/programming/deep-svdd/inference-hls/model_params.hpp:61:0" msg_body="Applying array_partition to '_ZL2W3': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL2W3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/nandanbali/programming/deep-svdd/inference-hls/model_params.hpp:42:0" msg_body="Applying array_partition to '_ZL2W2': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL2W2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/nandanbali/programming/deep-svdd/inference-hls/model_params.hpp:7:0" msg_body="Applying array_partition to '_ZL2W1': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZL2W1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/nandanbali/programming/deep-svdd/inference-hls/inference.hpp:7:25" msg_body="Applying array_partition to 'hidden1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="hidden1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/nandanbali/programming/deep-svdd/inference-hls/inference.hpp:8:25" msg_body="Applying array_partition to 'hidden2': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="hidden2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/nandanbali/programming/deep-svdd/inference-hls/inference_axis.cpp:17:18" msg_body="Applying array_partition to 'features': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="features"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+
